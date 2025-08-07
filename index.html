@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -8,12 +7,122 @@
       onload="this.rel='stylesheet'"
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
     />
+
     <title>Stitch Design</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <!-- Body content omitted for brevity -->
-    <!-- ... Full content from user included here ... -->
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e141b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">Map Explorer</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Topographic</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Climate</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="#">Political</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf3] text-[#0e141b] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#0e141b]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e7edf3] text-[#0e141b] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#0e141b]" data-icon="Globe" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA67wbgV5ylhtub-QiSUGKK6idBE_t11LvHRfdXkTRVumerz9jHbCSOFxyAD3IhZG1neG1qsDnYaqt0p5boTI_RhvOTtB5DukqfMPwGFLahW7-PfiqMv3N0ciNNj3wWet0ys20wO4vfqymZaM1gvOkEwf5YJ8BqZnCtx60XcZjpy9f46PC4UTh_0hiJHPq9e7D_KITNQeZywPhSwcydrf2SbYmlBg3OSCyr9qCTiFs6mdHXk1b-5dSsztbfPlGLjjdL4eXWmQ_spsI");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlBhtvhqRAQgivXBLvf-qOYjPGCdl_-CMs9d458wx39ccVhMLazvQmPLrtgI9Ck96Qi3X1TiJ82pGkpQklKcGZIEn_5iXaSgsgoZNMtUsSdNjdAuEoEtZQgIbPdHR2pzVckSYPpHav7wfEOV8pkEd4Cw-DouirkM9edntiz2-e7y4EKc0UGJjDCWz7vNoj4yCCQWROHLOmnQCR5Ihc2DY8Hz1EYL05-mnNRJAcpeksP5P9U15uFApyHLuvAeHTu06gGPa8pMQJPyM");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Explore the World Through Maps
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Discover detailed geographic maps, from topographic landscapes to climate patterns and political boundaries. Interact with maps, zoom in on regions, and learn
+                      about different parts of the world.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1773cf] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Start Exploring</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Topographic Maps</h2>
+            <p class="text-[#0e141b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Topographic maps reveal the physical features of the Earth's surface, including mountains, valleys, and rivers. These maps use contour lines to represent elevation
+              changes, providing a detailed view of the terrain.
+            </p>
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhh9bD4RBy8EUwDNEwPN-yJi7jvRGywEjysF8u0pK2aN43rphTadJ8yarjO8uUGAyrneBVWm71VBwI4cFLflWp0npVOiocjC2O7W0rule9kDpPr4k2OmK_OvtTBohj60C145z49-MMWbe0QmmrG6AWitWDrCl7U3yTF2U-Q8SxA-T8kPCeHV_VM-LhJS5J_tt8GHeVjNnFqCy0vDn8DJ8h-3KOZE6IZQ7lFQ6GtODxqk03-nQZwbTRfTJ_x4D-cqDyfkyEJCBfI3Q");'
+              ></div>
+            </div>
+            <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Climate Maps</h2>
+            <p class="text-[#0e141b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Climate maps illustrate the average weather conditions in different regions over long periods. They show patterns of temperature, precipitation, and other climatic
+              factors, helping to understand regional climates.
+            </p>
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtRz1ruw6nszjLUb71jum_EGgMetPj_RzKSi_J9JyX4ks91ol3rvrISreYjLFOj4mxiMa1ymNE0lA4scsSr693h1nJwmfNXW1CLiqQ_biQyy6VvofLeZTseKvMTIKSCXcQ_7hYr-IEfwFiSEQfa3GwnQBCs3eCn3qehVMb9ESzWWdu1RtJfEVKmBTrf8rEBy8aaTXtO32cBv93oGqYUu_DzdHQ3TWgvBx18YS4D6JGdN7vtxr-8KnhLzRiPoH1N8QppI5vbh1kmUs");'
+              ></div>
+            </div>
+            <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Political Maps</h2>
+            <p class="text-[#0e141b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Political maps display the boundaries of countries, states, and other administrative divisions. They often include capital cities and major urban centers, providing a
+              clear view of the world's political structure.
+            </p>
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7t7TIcV0ezFGQCGivTfzsXSoip-6PZck9yW_TZSQOHT9svD6qK6tHbl7So0GcH53eLEA8TPudEjJF_QqBuFbqg86gINBiVOlcRVW-0e0klTjzfxFGcvMOr4UvIUkzoM8M5Akdr9dwIi9VTTPihbrhdWc1xvDWoIt8t4Aaj3RCLB_3pZrES37e6PjQYVIvgiyd6VXH52jBspalwAF5evSgCnJXIvg7MkqjLIs_Z5YM3nWw8iypScEjdzPDCXIiikO75nwfN9PorBg");'
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
